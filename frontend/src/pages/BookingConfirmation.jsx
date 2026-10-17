@@ -344,10 +344,10 @@ const BookingConfirmation = () => {
           <div className="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 font-semibold gap-3">
             <div className="flex items-center gap-1.5 text-teal-700 font-bold">
               <ShieldCheck className="w-4 h-4 text-teal-600" />
-              Verified 256-Bit Encrypted Payment Certificate • BookMyRoom Official Invoice
+              Verified 256-Bit Encrypted Payment Certificate • GoOnStay Official Invoice
             </div>
             <div>
-              Support Email: <span className="text-slate-900 font-bold">support@bookmyroom.com</span>
+              Support Email: <span className="text-slate-900 font-bold">support@goonstay.com</span>
             </div>
           </div>
 

@@ -16,24 +16,24 @@ const AboutUs = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-extrabold uppercase tracking-wider mb-4 shadow-xs">
-            <Sparkles className="w-3.5 h-3.5 text-teal-600" /> Discover BookMyRoom
+            <Sparkles className="w-3.5 h-3.5 text-teal-600" /> Discover GoOnStay
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-4">
-            About <span className="bg-gradient-to-r from-teal-600 via-cyan-600 to-teal-700 bg-clip-text text-transparent">BookMyRoom</span>
+            About <span className="bg-gradient-to-r from-teal-600 via-cyan-600 to-teal-700 bg-clip-text text-transparent">GoOnStay</span>
           </h1>
 
           <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            BookMyRoom is an independent luxury & boutique hotel reservation platform designed to connect travelers directly with hotel owners and property hosts with total pricing transparency.
+            GoOnStay is an independent luxury & boutique hotel reservation platform designed to connect travelers directly with hotel owners and property hosts with total pricing transparency.
           </p>
         </div>
       </section>
 
-      {/* Main Why Book With BookMyRoom Section */}
+      {/* Main Why Book With GoOnStay Section */}
       <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
           <span className="text-xs font-extrabold text-teal-600 uppercase tracking-widest block">Core Platform Value</span>
-          <h2 className="text-3xl font-black text-slate-900">Why Book With BookMyRoom?</h2>
+          <h2 className="text-3xl font-black text-slate-900">Why Book With GoOnStay?</h2>
           <p className="text-xs sm:text-sm text-slate-500">Direct booking advantages built for seamless hospitality & total pricing transparency</p>
         </div>
 

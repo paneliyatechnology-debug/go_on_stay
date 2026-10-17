@@ -66,8 +66,8 @@ const Login = () => {
                 className="h-10 w-auto object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
               />
               <div>
-                <span className="text-base font-black text-slate-900 tracking-tight block leading-none">Book<span className="text-rose-600">My</span>Room</span>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-rose-600">BMR Portal</span>
+                <span className="text-base font-black text-slate-900 tracking-tight block leading-none">Go<span className="text-rose-600">On</span>Stay</span>
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-rose-600">GoOnStay Portal</span>
               </div>
             </Link>
 
@@ -199,7 +199,7 @@ const Login = () => {
           {/* Background Poster Image */}
           <img
             src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
-            alt="BookMyRoom Web App Poster"
+            alt="GoOnStay Web App Poster"
             className="absolute inset-0 w-full h-full object-cover scale-105 transition-transform duration-1000 hover:scale-100"
           />
 
@@ -212,7 +212,7 @@ const Login = () => {
               <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
               <span>500+ Verified Luxury Hotels</span>
             </div>
-            <span className="text-[11px] text-white/70 font-mono uppercase tracking-widest font-bold">BookMyRoom App</span>
+            <span className="text-[11px] text-white/70 font-mono uppercase tracking-widest font-bold">GoOnStay App</span>
           </div>
 
           {/* Poster Middle Copy */}

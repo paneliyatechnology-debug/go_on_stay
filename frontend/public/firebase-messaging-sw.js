@@ -33,15 +33,15 @@ messaging.onBackgroundMessage((payload) => {
 
   const notificationTitle = payload.notification?.title
     || payload.data?.title
-    || '🏨 BookMyRoom Alert';
+    || '🏨 GoOnStay Alert';
 
   const notificationOptions = {
     body: payload.notification?.body
       || payload.data?.body
-      || 'You have a new notification from BookMyRoom.',
+      || 'You have a new notification from GoOnStay.',
     icon: '/logo.png',
     badge: '/logo.png',
-    tag: 'bookmyroom-notification-' + Date.now(),
+    tag: 'goonstay-notification-' + Date.now(),
     renotify: true,
     vibrate: [200, 100, 200],
     data: payload.data || {},
@@ -57,7 +57,7 @@ messaging.onBackgroundMessage((payload) => {
 // Listen for direct messages from the frontend to show Android status bar notifications
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SHOW_NOTIFICATION') {
-    const title = event.data.title || '🔔 BookMyRoom Notification';
+    const title = event.data.title || '🔔 GoOnStay Notification';
     const options = {
       body: event.data.body || 'New update available.',
       icon: '/logo.png',

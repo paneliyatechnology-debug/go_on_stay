@@ -194,14 +194,14 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-1.5 group shrink-0">
             <img
               src="/logo.png"
-              alt="BMR BookMyRoom Logo"
+              alt="GoOnStay Logo"
               className="h-12 sm:h-14 w-auto object-contain rounded-xl hover:scale-105 transition-transform duration-300"
             />
             <div>
               <div className="text-lg sm:text-2xl font-extrabold tracking-tight flex items-center gap-1 text-slate-900 leading-tight">
-                <span>Book<span className="text-rose-600">My</span>Room</span>
+                <span>Go<span className="text-rose-600">On</span>Stay</span>
               </div>
-              <p className="hidden sm:block text-[10px] text-rose-600/80 uppercase tracking-widest font-bold">Oceanic Vacation Marketplace</p>
+              <p className="hidden sm:block text-[10px] text-rose-600/80 uppercase tracking-widest font-bold">Premium Vacation & Hotel Stays</p>
             </div>
           </Link>
 
@@ -659,7 +659,7 @@ const Navbar = () => {
                         onClick={() => setDropdownOpen(false)}
                         className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl text-xs font-bold text-slate-600 hover:bg-slate-50 transition-colors border-t border-slate-100 mt-1 pt-2"
                       >
-                        About BookMyRoom
+                        About GoOnStay
                       </Link>
                     </>
                   )}

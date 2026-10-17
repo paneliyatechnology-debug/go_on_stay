@@ -51,7 +51,7 @@ class SendTestNotificationView(APIView):
             User = get_user_model()
             user = User.objects.first()
 
-        title = request.data.get('title', '🔔 BookMyRoom Test Alert!')
+        title = request.data.get('title', '🔔 GoOnStay Test Alert!')
         message = request.data.get(
             'message', 
             'Yeh test notification hai! Live stay alerts, reminders aur booking updates successfully work kar rahe hain. 🎉'

@@ -33,7 +33,7 @@ const NotificationBell = () => {
   useEffect(() => {
     if (user) {
       const unsubscribe = onForegroundMessage((payload) => {
-        const title = payload.notification?.title || payload.data?.title || '🔥 BookMyRoom Alert';
+        const title = payload.notification?.title || payload.data?.title || '🔥 GoOnStay Alert';
         const body = payload.notification?.body || payload.data?.body || 'New live update received.';
         playNotificationTone();
         triggerNativePushNotification(title, body);

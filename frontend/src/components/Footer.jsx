@@ -23,20 +23,20 @@ const Footer = () => {
             <Link to="/" className="flex items-center gap-3 group">
               <img
                 src="/logo.png"
-                alt="BMR BookMyRoom Logo"
+                alt="GoOnStay Logo"
                 className="h-12 sm:h-14 w-auto object-contain mix-blend-screen group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(244,63,94,0.4)]"
               />
               <div>
                 <span className="text-xl sm:text-2xl font-black text-white tracking-tight leading-none block">
-                  Book<span className="text-rose-500">My</span>Room
+                  Go<span className="text-rose-500">On</span>Stay
                 </span>
                 <span className="text-[10px] text-rose-400/90 font-bold uppercase tracking-widest block pt-1">
-                  Oceanic Vacation Marketplace
+                  Premium Vacation & Hotel Stays
                 </span>
               </div>
             </Link>
             <p className="text-xs text-slate-400 leading-relaxed font-medium">
-              BookMyRoom is an independent luxury & boutique hotel reservation engine offering direct room bookings, instant confirmation, best price guarantee, and verified reviews.
+              GoOnStay is an independent luxury & boutique hotel reservation engine offering direct room bookings, instant confirmation, best price guarantee, and verified reviews.
             </p>
             <div className="p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md flex items-center gap-2.5 text-xs text-teal-400 font-semibold shadow-inner">
               <ShieldCheck className="w-4 h-4 text-teal-400 shrink-0" />
@@ -65,7 +65,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/about" className="hover:text-rose-400 transition-colors flex items-center gap-1 group">
-                  <span>About BookMyRoom</span>
+                  <span>About GoOnStay</span>
                   <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Link>
               </li>
@@ -129,7 +129,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-purple-400 shrink-0" />
-                <span>support@bookmyroom.com</span>
+                <span>support@goonstay.com</span>
               </li>
             </ul>
           </div>
@@ -138,7 +138,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-medium">
-          <p>© 2026 BookMyRoom Platform. All rights reserved. Independent Hotel Booking System.</p>
+          <p>© 2026 GoOnStay Platform. All rights reserved. Independent Hotel Booking System.</p>
           <div className="flex items-center gap-2 font-semibold">
             <span>Crafted with</span>
             <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" />

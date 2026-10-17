@@ -162,7 +162,7 @@ const BecomeHost = () => {
         key: key_id,
         amount: amount,
         currency: currency || 'INR',
-        name: 'BookMyRoom - Host Onboarding',
+        name: 'GoOnStay - Host Onboarding',
         description: `Subscription: ${selectedPlan.name}`,
         image: '/logo.png',
         order_id: order_id,
@@ -304,7 +304,7 @@ const BecomeHost = () => {
             List Your Hotel & Start Hosting Guests
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 font-semibold max-w-xl mx-auto">
-            Join thousands of luxury hotel owners on BookMyRoom. Complete 3 quick steps to activate your host profile and list your property.
+            Join thousands of luxury hotel owners on GoOnStay. Complete 3 quick steps to activate your host profile and list your property.
           </p>
 
           {/* Stepper Progress Bar */}

@@ -117,8 +117,8 @@ const Register = () => {
                 className="h-10 w-auto object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
               />
               <div>
-                <span className="text-base font-black text-slate-900 tracking-tight block leading-none">Book<span className="text-rose-600">My</span>Room</span>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-rose-600">Join BMR Platform</span>
+                <span className="text-base font-black text-slate-900 tracking-tight block leading-none">Go<span className="text-rose-600">On</span>Stay</span>
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-rose-600">Join GoOnStay Platform</span>
               </div>
             </Link>
 
@@ -126,7 +126,7 @@ const Register = () => {
             <div>
               <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">Create an Account</h2>
               <p className="mt-1 text-xs text-slate-500 font-semibold leading-relaxed">
-                Join BookMyRoom to book rooms and manage your stay reservations
+                Join GoOnStay to book rooms and manage your stay reservations
               </p>
             </div>
           </div>
@@ -366,7 +366,7 @@ const Register = () => {
 
           <div className="space-y-6 relative z-10">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/20 border border-rose-400/30 text-rose-300 text-xs font-extrabold uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5" /> BookMyRoom Guarantee
+              <Sparkles className="w-3.5 h-3.5" /> GoOnStay Guarantee
             </div>
 
             <h3 className="text-2xl sm:text-3xl font-black leading-tight tracking-tight">
@@ -408,7 +408,7 @@ const Register = () => {
 
           <div className="pt-8 border-t border-slate-800 relative z-10">
             <p className="text-[11px] text-slate-400 font-medium leading-relaxed">
-              By creating an account, you agree to BookMyRoom's Terms of Service, Privacy Policy, and Email Verification rules.
+              By creating an account, you agree to GoOnStay's Terms of Service, Privacy Policy, and Email Verification rules.
             </p>
           </div>
 

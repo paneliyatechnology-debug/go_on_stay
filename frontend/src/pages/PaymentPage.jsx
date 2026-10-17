@@ -66,7 +66,7 @@ const PaymentPage = () => {
       key: paymentOrder.key_id,
       amount: paymentOrder.amount,
       currency: paymentOrder.currency,
-      name: "BookMyRoom",
+      name: "GoOnStay",
       description: `Stay Reservation - ${paymentOrder.booking_id}`,
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=120&q=80",
       order_id: paymentOrder.order_id,

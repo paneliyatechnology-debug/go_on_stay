@@ -13,7 +13,7 @@ def send_otp_email(receiver_email, otp):
 
     message = EmailMessage()
 
-    message["Subject"] = "Your Email Verification OTP"
+    message["Subject"] = "GoOnStay - Your Email Verification OTP"
     message["From"] = sender_email
     message["To"] = receiver_email
 
@@ -30,7 +30,7 @@ This OTP is valid for 5 minutes.
 If you did not request this OTP, please ignore this email.
 
 Regards,
-Your Application
+GoOnStay Team
 """
     )
 

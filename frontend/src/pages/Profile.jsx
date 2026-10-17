@@ -393,7 +393,7 @@ const Profile = () => {
                   Notification Preferences
                 </h2>
                 <p className="text-xs text-slate-500 mt-1">
-                  Manage how BookMyRoom alerts and updates are delivered to you
+                  Manage how GoOnStay alerts and updates are delivered to you
                 </p>
               </div>
 
