@@ -411,7 +411,7 @@ const AddEditRoom = () => {
             </h2>
 
             {/* SECTION 1: HOTEL PROPERTY PHOTOS */}
-            <div className="p-5 rounded-2xl bg-amber-50/40 border border-amber-200/80 space-y-4">
+            <div className="p-5 rounded-xl bg-amber-50/40 border border-amber-200/80 space-y-4">
               <div className="flex items-center justify-between">
                 <div>
                   <h3 className="text-sm font-black text-amber-900 flex items-center gap-2">
@@ -499,7 +499,7 @@ const AddEditRoom = () => {
             </div>
 
             {/* SECTION 2: ROOM CATEGORY PHOTOS */}
-            <div className="p-5 rounded-2xl bg-teal-50/40 border border-teal-200/80 space-y-4">
+            <div className="p-5 rounded-xl bg-teal-50/40 border border-teal-200/80 space-y-4">
               <div className="flex items-center justify-between">
                 <div>
                   <h3 className="text-sm font-black text-teal-950 flex items-center gap-2">

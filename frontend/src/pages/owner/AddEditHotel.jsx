@@ -383,7 +383,7 @@ const AddEditHotel = () => {
             </label>
 
             {/* Dropzone File Picker */}
-            <div className="border-2 border-dashed border-teal-600/40 hover:border-teal-600 bg-teal-50/40 rounded-2xl p-6 text-center transition-colors">
+            <div className="border-2 border-dashed border-teal-600/40 hover:border-teal-600 bg-teal-50/40 rounded-xl p-6 text-center transition-colors">
               <input
                 type="file"
                 accept="image/*"
