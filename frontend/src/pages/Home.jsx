@@ -5,7 +5,7 @@ import {
   Star, Compass, CheckCircle2, ArrowRight, Tag,
   ChevronLeft, ChevronRight, Heart, Wifi, Coffee, Tv,
   Clock, ChevronDown, X, Palmtree, Waves, Building2,
-  Percent, Copy, Check, Award, Headset, Zap, Flame
+  Percent, Copy, Check, Award, Headset, Zap, Flame, Landmark
 } from 'lucide-react';
 import api from '../services/api';
 import InteractiveSearchBar from '../components/InteractiveSearchBar';
@@ -249,7 +249,7 @@ const Home = () => {
           {/* Quick Category Icon Navigation Pills */}
           <div className="pt-4 flex items-center justify-center gap-2 overflow-x-auto no-scrollbar py-2">
             {travelCategories.map((cat) => {
-              const Icon = cat.icon;
+              const Icon = cat.icon || Hotel;
               const isActive = activeCategory === cat.id;
               return (
                 <button
