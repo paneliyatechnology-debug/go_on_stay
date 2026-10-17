@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-primary: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --color-teal-main: #e11d48;
+  --color-teal-dark: #be123c;
+  --color-teal-light: #fff1f2;
+  --color-cyan-accent: #f43f5e;
+  
+  --color-dark: #0f172a;
+  --color-body-bg: #f8fafc;
+  --color-card-bg: #ffffff;
+  --color-border: #e2e8f0;
+}
+
+/* Base Body Styles */
+html, body {
+  font-family: var(--font-primary);
+  background-color: #f8fafc;
+  color: #0f172a;
+  line-height: 1.5;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  max-width: 100vw;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Ensure containers are always centered */
+.container-centered {
+  max-width: 80rem; /* 1280px */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* UI Utility Components */
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #fecdd3;
+  box-shadow: 0 10px 30px rgba(225, 29, 72, 0.06);
+}
+
+/* Frosted Blur Glass Badges & Pills */
+.glass-header {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.glass-pill-light {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
+}
+
+.glass-pill-dark {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card-white {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+}
+
+/* Primary Red/Rose Buttons & Standardized Cross-Device Button Styles */
+button, .btn, a.btn, input[type="button"], input[type="submit"] {
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  word-break: break-word;
+  vertical-align: middle;
+  line-height: 1.2;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active, .btn:active, a.btn:active {
+  transform: scale(0.98);
+}
+
+button svg, .btn svg, a.btn svg {
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Primary Solid Red Button */
+.btn-teal, .btn-primary, .btn-indigo, .btn-rose, .btn-red {
+  background: #dc2626;
+  color: #ffffff !important;
+  padding: 0.625rem 1rem;
+  min-height: 40px;
+  max-width: 100%;
+  border-radius: 0.75rem; /* 12px */
+  font-size: 0.8125rem; /* 13px */
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+  border: 1px solid transparent;
+  line-height: 1.2;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-teal:hover, .btn-primary:hover, .btn-indigo:hover, .btn-rose:hover, .btn-red:hover {
+  background: #b91c1c;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+}
+
+.btn-cyan, .btn-violet {
+  background: #dc2626;
+  color: #ffffff !important;
+  padding: 0.625rem 1rem;
+  min-height: 40px;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  line-height: 1.2;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-cyan:hover, .btn-violet:hover {
+  background: #b91c1c;
+}
+
+/* Secondary White/Outline Button */
+.btn-secondary, .btn-light, .btn-dark {
+  background: #ffffff;
+  color: #1e293b !important;
+  padding: 0.625rem 1rem;
+  min-height: 40px;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #e2e8f0;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-secondary:hover, .btn-light:hover, .btn-dark:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a !important;
+}
+
+.btn-outline-teal, .btn-outline-indigo, .btn-outline-red {
+  background: transparent;
+  border: 1.5px solid #dc2626;
+  color: #dc2626;
+  padding: 0.625rem 1rem;
+  min-height: 40px;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  line-height: 1.2;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-teal:hover, .btn-outline-indigo:hover, .btn-outline-red:hover {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+/* Mobile Screen Responsive Tweaks for Buttons */
+@media (max-width: 640px) {
+  .btn-teal, .btn-primary, .btn-indigo, .btn-rose, .btn-red,
+  .btn-cyan, .btn-violet, .btn-secondary, .btn-light, .btn-dark,
+  .btn-outline-teal, .btn-outline-indigo, .btn-outline-red {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    min-height: 36px;
+    gap: 0.375rem;
+  }
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.badge-customer {
+  background-color: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+}
+
+
+.badge-owner {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.badge-admin {
+  background-color: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #fecdd3;
+}
+
+/* Keyframe Animations */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 4px 20px rgba(13, 148, 136, 0.12); }
+  50% { box-shadow: 0 8px 30px rgba(6, 182, 212, 0.25); }
+}
+
+@keyframes continuousMarquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-marquee-continuous {
+  display: flex;
+  width: max-content;
+  animation: continuousMarquee 38s linear infinite;
+}
+
+.animate-marquee-continuous:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
