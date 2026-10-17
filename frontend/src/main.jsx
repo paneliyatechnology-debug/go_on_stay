@@ -2,7 +2,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import ErrorBoundary from './components/ErrorBoundary.jsx'
 
 // Register Firebase Messaging Service Worker as early as possible
 // This enables background push notifications even when the app tab is not active.
@@ -21,8 +20,6 @@ if ('serviceWorker' in navigator) {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
+    <App />
   </StrictMode>,
 )

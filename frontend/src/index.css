@@ -14,10 +14,12 @@
   --color-border: #e2e8f0;
 }
 
-/* Base Body Styles */
+/* Base Body Styles with Subtle Architectural Dot Grid */
 html, body {
   font-family: var(--font-primary);
   background-color: #f8fafc;
+  background-image: radial-gradient(rgba(148, 163, 184, 0.22) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
   color: #0f172a;
   line-height: 1.5;
   min-height: 100vh;
@@ -72,23 +74,6 @@ button {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 0.75rem; /* 12px */
-}
-
-/* Smooth Card Hover & Micro-interaction Effects */
-.hover-lift {
-  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s ease, border-color 0.22s ease;
-}
-.hover-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.1);
-  border-color: #cbd5e1;
-}
-
-.img-zoom {
-  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.group:hover .img-zoom {
-  transform: scale(1.06);
 }
 
 /* Buttons */
